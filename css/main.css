@@ -10,5 +10,11 @@ body {
 .imageBox {
   border: 2px solid #DADADA;
   border-radius: 8px;
-  height: 140px;
-  width: 140px; }
+  height: 120px;
+  width: 120px; }
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 8px; }
