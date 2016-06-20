@@ -23,11 +23,11 @@ $("form").on("submit",function(e){
 
 	$("img").on('click',function(){
 		var imgClick = $(this).data("song");
-		var songSource = "http://api.soundcloud.com/tracks/"+imgClick+"/stream?client_id=03e4633e2d85874a921380e47cac705d"	
+		var songSource = "http://api.soundcloud.com/tracks/"+imgClick+"/stream?client_id=03e4633e2d85874a921380e47cac705d";	
 			$("audio").attr("src",songSource);
 			//alert(imgClick);
 
-		})
+		});
 
 	}
 
