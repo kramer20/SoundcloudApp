@@ -1,0 +1,14 @@
+body {
+  background-color: gray; }
+
+.container {
+  border: 2px solid #F5F5F5;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  margin-top: 20px; }
+
+.imageBox {
+  border: 2px solid #DADADA;
+  border-radius: 8px;
+  height: 140px;
+  width: 140px; }
