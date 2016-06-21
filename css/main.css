@@ -40,3 +40,10 @@ h2 {
   width: 900px;
   margin: 0 auto;
   display: block; }
+
+.songTitle {
+  text-align: center;
+  font-family: 'Hind', sans-serif; }
+
+.bottomRow {
+  height: 230px; }
