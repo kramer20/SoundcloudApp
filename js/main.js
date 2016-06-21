@@ -2,11 +2,6 @@ $( document ).ready(function() {
    
 $(".searchArtist").focus();
 
-//$("button").on('click',function(e){
-	//e.preventDefault();
-	//var submit = $(".searchArtist").val();
-
-//	$(".searchArtist").val("");
 
 $("form").on("submit",function(e){
 	e.preventDefault();
@@ -16,7 +11,7 @@ $("form").on("submit",function(e){
 		$(".searchArtist").val("");
 
 	$.ajax({
-	url: 'http://api.soundcloud.com/tracks?client_id=03e4633e2d85874a921380e47cac705d&q='+search,//+submit, 
+	url: 'http://api.soundcloud.com/tracks?client_id=03e4633e2d85874a921380e47cac705d&q='+search,
 	type:"GET",
 	success: function(result){
 
@@ -42,5 +37,4 @@ $("form").on("submit",function(e){
 
 });
 
-//});
 });
