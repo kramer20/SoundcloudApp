@@ -6,9 +6,13 @@ $(".searchArtist").focus();
 $("form").on("submit",function(e){
 	e.preventDefault();
 
+	$('.playlistRow').html('');
+
 		var search = $(".searchArtist").val();
 		
 		$(".searchArtist").val("");
+
+		$(this).val().term = null;
 
 	$.ajax({
 	url: 'http://api.soundcloud.com/tracks?client_id=03e4633e2d85874a921380e47cac705d&q='+search,
@@ -29,6 +33,8 @@ $("form").on("submit",function(e){
 			//alert(imgClick);
 
 		});
+
+
 
 	}
 
